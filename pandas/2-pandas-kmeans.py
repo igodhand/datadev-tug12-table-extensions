@@ -1,10 +1,9 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
-pd.options.mode.chained_assignment = None
 
-df = pd.read_csv("../data/SuperStore2024.csv")
-df = df[['Row ID','Customer Name','Sales','Profit']]
+df = pd.read_csv("../data/SuperStoreSimple.csv")
+
 
 scaler = MinMaxScaler()
 columns= ['Sales', 'Profit']
